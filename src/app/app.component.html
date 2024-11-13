@@ -6,11 +6,13 @@
   <!-- We can also use string interpolation to render the value of a property (title) of a component -->
   <h1>{{ true ? title : "No title" }}</h1>
   <p>Using a component within another component</p>
-  <custom></custom>
   <!-- What are directives? -->
   <!-- Directives are instructions in the DOM that tell Angular to do something with a DOM element. -->
   <!-- ngIf, ngFor, ngSwitch, ngStyle, ngClass -->
   <custom *ngIf="2 > 1"></custom>
+
+  <!-- courses -->
+  <course></course>
 </main>
 
 <router-outlet />
