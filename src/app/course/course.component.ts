@@ -1,16 +1,17 @@
-import { NgForOf } from '@angular/common';
+import { DatePipe, NgForOf } from '@angular/common';
 import { Component } from '@angular/core';
 import { CoursesService } from '../courses.service';
 
 @Component({
   selector: 'course',
   standalone: true,
-  imports: [NgForOf],
+  imports: [NgForOf, DatePipe],
   templateUrl: './course.component.html',
   styleUrl: './course.component.css',
 })
 export class CourseComponent {
   title = 'List of Courses';
+  date = new Date();
   // initialize the courses property with an empty array
   courses: string[];
 
