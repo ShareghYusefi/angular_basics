@@ -2,10 +2,15 @@
 <!-- A typescript front-end framework for building signle page applications (SPA) -->
 
 <main>
-  <h1>{{ title }}</h1>
+  <!-- String interpolation: {{ }} is used to render dynamic content like simple Javascript expression -->
+  <!-- We can also use string interpolation to render the value of a property (title) of a component -->
+  <h1>{{ true ? title : "No title" }}</h1>
   <p>Using a component within another component</p>
   <custom></custom>
-  <custom></custom>
+  <!-- What are directives? -->
+  <!-- Directives are instructions in the DOM that tell Angular to do something with a DOM element. -->
+  <!-- ngIf, ngFor, ngSwitch, ngStyle, ngClass -->
+  <custom *ngIf="2 > 1"></custom>
 </main>
 
 <router-outlet />
