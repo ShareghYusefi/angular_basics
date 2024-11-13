@@ -10,5 +10,7 @@ import { Component } from '@angular/core';
 })
 export class CustomComponent {
   title = 'Custom Component';
-  imageUrl = 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
+  imageUrl =
+    'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
+  colSpan = 2;
 }

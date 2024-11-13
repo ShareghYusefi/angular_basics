@@ -1,3 +1,9 @@
 <h2>{{ title }}</h2>
 <!-- property binding updates in one direction: from the component to the DOM -->
 <img [src]="imageUrl" alt="" />
+<!-- Attribute binding: certain DOM html elementd dont have a 1 to 1 map of attributes so we must speicify the attribute we want to bind to throght attr -->
+<table>
+  <tr>
+    <td [attr.colspan]="colSpan">Table data here</td>
+  </tr>
+</table>
