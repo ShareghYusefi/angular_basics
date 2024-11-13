@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
   templateUrl: './custom.component.html',
   styleUrl: './custom.component.css',
 })
-export class CustomComponent {}
+export class CustomComponent {
+  title = 'Custom Component';
+  imageUrl = 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
+}
