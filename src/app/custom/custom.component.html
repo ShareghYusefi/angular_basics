@@ -20,5 +20,11 @@
 
 <!-- Two way binding: updates in both directions: from the component to the DOM and vice versa -->
 <!-- ngModel is a directive that is part of the FormsModule module which needs to be imported for use in component -->
-
-<input type="text" [(ngModel)]="email" (keydown.enter)="onKeyDown()" />
+<!-- Template Variable: a reference to a DOM element in the template -->
+<!-- #emailRef is a template variable that references the input element -->
+<input
+  #emailRef
+  type="text"
+  [(ngModel)]="email"
+  (keydown.enter)="onKeyDown(emailRef.value)"
+/>

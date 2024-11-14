@@ -22,7 +22,7 @@ export class CustomComponent {
     console.log('Button was clicked', $event);
   }
 
-  onKeyDown() {
-    console.log(this.email);
+  onKeyDown(emailArg: string) {
+    console.log('Enter was pressed', emailArg);
   }
 }
