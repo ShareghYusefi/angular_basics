@@ -15,4 +15,8 @@ export class CustomComponent {
   colSpan = 2;
 
   isActive = true;
+
+  onSave($event: Event) {
+    console.log('Button was clicked', $event);
+  }
 }

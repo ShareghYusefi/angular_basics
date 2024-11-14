@@ -12,6 +12,7 @@
   class="btn btn-primary"
   [class.active]="isActive"
   [style.color]="isActive ? 'red' : 'purple'"
+  (click)="onSave($event)"
 >
   Click me
 </button>
