@@ -1,6 +1,7 @@
 <h2>{{ title }}</h2>
 <!-- Pipes: | is used to apply a pipe to a value -->
 <p>{{ date | date }}</p>
+<!-- NgFor, NgClass, NgStyle -->
 <ul>
   <li
     *ngFor="let course of courses"
@@ -8,7 +9,17 @@
       'text-success': true,
       'fst-italic': true
     }"
+    [ngStyle]="{
+      fontSize: '24px',
+      fontFamily: 'Arial'
+    }"
   >
     {{ course }}
+    <!-- NgSwitch checking for math course -->
+    <div [ngSwitch]="course">
+      <div *ngSwitchCase="'math'">Math course</div>
+      <div *ngSwitchCase="'science'">Science course</div>
+      <div *ngSwitchDefault>Unknown course</div>
+    </div>
   </li>
 </ul>

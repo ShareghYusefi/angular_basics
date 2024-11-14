@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class CoursesService {
-  private courses = ['course1', 'course2', 'course3'];
+  private courses = ['math', 'science', 'english'];
 
   constructor() {}
 
