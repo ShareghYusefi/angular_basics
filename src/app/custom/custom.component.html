@@ -8,6 +8,7 @@
   </tr>
 </table>
 
+<!-- Event binding: updates in one direction: from the DOM to the component ts file -->
 <button
   class="btn btn-primary"
   [class.active]="isActive"
@@ -16,3 +17,8 @@
 >
   Click me
 </button>
+
+<!-- Two way binding: updates in both directions: from the component to the DOM and vice versa -->
+<!-- ngModel is a directive that is part of the FormsModule module which needs to be imported for use in component -->
+
+<input type="text" [(ngModel)]="email" (keydown.enter)="onKeyDown()" />

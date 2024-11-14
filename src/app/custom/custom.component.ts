@@ -1,10 +1,11 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'custom',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, FormsModule],
   templateUrl: './custom.component.html',
   styleUrl: './custom.component.css',
 })
@@ -15,8 +16,13 @@ export class CustomComponent {
   colSpan = 2;
 
   isActive = true;
+  email = '';
 
   onSave($event: Event) {
     console.log('Button was clicked', $event);
+  }
+
+  onKeyDown() {
+    console.log(this.email);
   }
 }
