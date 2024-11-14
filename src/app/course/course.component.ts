@@ -1,11 +1,11 @@
-import { DatePipe, NgForOf } from '@angular/common';
+import { DatePipe, NgClass, NgForOf } from '@angular/common';
 import { Component } from '@angular/core';
 import { CoursesService } from '../courses.service';
 
 @Component({
   selector: 'course',
   standalone: true,
-  imports: [NgForOf, DatePipe],
+  imports: [NgForOf, DatePipe, NgClass],
   templateUrl: './course.component.html',
   styleUrl: './course.component.css',
 })
