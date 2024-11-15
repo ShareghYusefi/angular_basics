@@ -6,9 +6,11 @@ import {
   NgSwitch,
   NgSwitchCase,
   NgSwitchDefault,
+  UpperCasePipe,
 } from '@angular/common';
 import { Component } from '@angular/core';
 import { CoursesService } from '../courses.service';
+import { CapitalizePipe } from '../capitalize.pipe';
 
 @Component({
   selector: 'course',
@@ -21,6 +23,7 @@ import { CoursesService } from '../courses.service';
     NgSwitch,
     NgSwitchCase,
     NgSwitchDefault,
+    CapitalizePipe
   ],
   templateUrl: './course.component.html',
   styleUrl: './course.component.css',

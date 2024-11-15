@@ -14,7 +14,7 @@
       fontFamily: 'Arial'
     }"
   >
-    {{ course }}
+    {{ course | capitalize }}
     <!-- NgSwitch checking for math course -->
     <div [ngSwitch]="course">
       <div *ngSwitchCase="'math'">Math course</div>
