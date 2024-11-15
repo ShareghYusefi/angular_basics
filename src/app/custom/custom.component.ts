@@ -1,11 +1,12 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ColorfulBGDirective } from '../colorful-bg.directive';
 
 @Component({
   selector: 'custom',
   standalone: true,
-  imports: [NgIf, FormsModule],
+  imports: [NgIf, FormsModule, ColorfulBGDirective],
   templateUrl: './custom.component.html',
   styleUrl: './custom.component.css',
 })
